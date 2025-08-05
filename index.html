@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Sempahorify.info - The Online Semaphore Converter</title>
+  <link rel="stylesheet" href="/semaphorify.css" type="text/css" media="all" />
+  <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+  <script src="/contrib/jquery-2.1.1.min.js"></script>
+  <script src="/contrib/purl.js"></script>
+  <script src="/lib/semaphorify.js"></script>
+  <script src="/semaphorify-ui.js"></script>
+ </head>
+ <body>
+ <div id="pageContent">
+ <img alt="Semaphorify.info - The Online Semaphore Converter" src="/banner.png" width="760" height="100" /><br />
+ 
+ <!-- <div id="donate">
+  This service is provided entirely for free and without ads, but
+  the server is not free to run. Please consider making a small contribution towards those costs.
+  <div id="donation_button">
+   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="AN4H7UCJD4EEJ" />
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+   </form>
+  </div>
+ </div> -->
+ 
+ <form>
+  <fieldset>
+    <legend>Semaphore Converter</legend>
+    <noscript>WARNING - JavaScript is disabled, and without it, this converter cannot function!</noscript>
+    
+    <fieldset>
+      <legend>Input</legend>
+      <input type="text" id="sem_input" size="70" />
+      <img class="sem_validation" id="sem_input_vi" src="/contrib/famfamfam_silk_icons_v013/tick.png" width="16" height="16" />
+      <span class="sem_validation_info" id="sem_input_vt" >(only letters, digits & spaces)</span>
+    </fieldset>
+    
+    <p><input type="button" id="sem_convert" value="Convert" /></p>
+    
+    <fieldset>
+      <legend>Static Output</legend>
+      <div id="sem_out">
+        <img src="/semaphores/_space.png" alt="Rest" class="sem_flag" />
+      </div>
+    </fieldset>
+    
+    <fieldset id="animation_interface">
+      <legend>Animation</legend>
+      <div id="anicontainer">
+        <div id="sem_ani">
+          <img src="/semaphores/_space.png" alt="Rest" class="sem_flag" />
+        </div>
+        <div id="sem_ani_text">'Rest'</div>
+        <div id="sem_ani_button_container">
+          <input type="button" id="sem_play" value="Play" disabled='disabled' />
+        </div>
+      </div>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Share</legend>
+      Share Link:
+      <input type="text" id="sem_share_link" value="http://semaphorify.info/" size="30" />
+    </fieldset>
+  </fieldset>
+ </form>
+ 
+ <h2>About Flag Semaphore Signals</h2>
+ 
+ <p>When ever you see a guy with two flags waving his arms around, this is what he's doing!</p>
+ 
+ <p>Flag semaphores can only represent letters, digits and spaces, so there are no punctuation marks.
+ It's best for passing short messages, probably in some sort of code so you could communicate something
+ complex with only a few characters. Text speak would probably work well over flag semaphore!</p>
+ 
+ <p>As well as flags for letters, digits, and spaces, there are also a few special-purpose flags
+ that let you send common messages like 'acknowledge', 'cancel', 'correct' and 'error' with
+ just a single flag. But, at the moment, this converter doesn't support them yet.</p>
+ 
+ <p style="font-weight:bold;">For more information about flag semaphores, see the 
+ <a href="http://en.wikipedia.org/wiki/Flag_semaphore" target="_blank">wikipedia article</a>.</p>
+  
+ <h2>Credits</h2>
+ <ul>
+  <li>Website by <a href="http://www.bartb.ie" target="_blank">Bart Busschots</a>.</li>
+  <li>Semaphore images from <a href="http://commons.wikimedia.org/wiki/Category:Flag_semaphore" target="_blank">The Wikimedia Commons</a>.</li>
+  <li>Form validation icons from <a href="http://www.famfamfam.com/lab/icons/silk/" target="_blank">Silk Icons by FAMFAMFAM</a>.</li>
+ </ul>
+ </div>
+ </body>
+</html>

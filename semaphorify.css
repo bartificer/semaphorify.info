@@ -1,0 +1,135 @@
+/* 
+Stylesheet for semaphorify.net
+*/
+
+/*
+ The basic page layout - get it all centred and coloured correctly
+*/
+body {
+    background: #EFEFEF url(background.gif) top center repeat-y;
+    color: #333333;
+    font-size: 11px;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0px auto 0px;
+    padding: 0px;
+}
+
+#pageContent {
+    background: #FFFFFF;
+    width: 760px;
+    margin: 0px auto 0px;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+}
+
+#donate{
+    height: 30px;
+    color: #6E7B91;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    position: relative;
+    border: 1px dashed #6E7B91;
+    background-color: #FFFFE6;
+}
+#donation_button{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+h2{
+    color: #990000;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+img{
+    border-width: 0px;
+}
+
+.errorMessage{
+    color: red;
+}
+
+/*
+ Style the forms
+*/
+fieldset{
+    background: #FFFFF9;
+    border: 1px solid #990000;
+}
+fieldset fieldset{
+    border: 1px dashed #990000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+fieldset legend{
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid #990000;
+    padding: 5px;
+    font-weight: bold;
+    background: #FF0000;
+    color: white;
+}
+fieldset fieldset legend{
+    font-size: 12px;
+    border-width: 0px;
+    font-weight: normal;
+    color: #990000;
+    background: #FFFFF9;
+}
+
+/*
+ Styles for error handling
+*/
+
+.sem_validation_info{
+	display: none;
+	font-style: italic;
+	color: #990000;
+}
+
+/*
+ Style the rendered semaphore flags
+*/
+img.sem_flag{
+	border: 0px;
+	margin: 1px;
+	width: 100px;
+}
+
+/*
+ Style the animation
+*/
+#anicontainer{
+	position: relative;
+	height: 120px;
+}
+#sem_ani{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border: 1px solid #990000;
+	background: white;
+	padding: 4px;
+}
+#sem_ani_text{
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	width: 110px;
+	text-align: center;
+}
+#sem_ani_button_container{
+	position: absolute;
+	top: 40px;
+	left: 120px;
+}
